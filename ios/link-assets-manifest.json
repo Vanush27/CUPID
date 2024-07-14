@@ -1,0 +1,25 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/family/SFProDisplay-Bold.ttf",
+      "sha1": "5bac207069d4fb49f1fced1b56182bce4a6fafaf"
+    },
+    {
+      "path": "src/assets/fonts/family/SFProDisplay-Medium.ttf",
+      "sha1": "9984b1542bd1f676d5416b7ba6bf670c56620296"
+    },
+    {
+      "path": "src/assets/fonts/family/Syncopate-Bold.ttf",
+      "sha1": "9edd31de251b2cf453d5e70cd4171df223dcdce9"
+    },
+    {
+      "path": "src/assets/fonts/family/Syncopate-Regular.ttf",
+      "sha1": "ea29cbbd37fb09bb569b9ed5723abf9447b8c3ed"
+    },
+    {
+      "path": "src/assets/fonts/family/index.ts",
+      "sha1": "2b6a4bbc1de2fd0344f18104d8e6378ab8dafbc2"
+    }
+  ]
+}
