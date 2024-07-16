@@ -1,10 +1,9 @@
-import {fonts} from '@assets/fonts';
 import {StyleSheet} from 'react-native';
+import {fonts} from '@assets/fonts';
 
 export function useStyles() {
   const styles = StyleSheet.create({
-    container: {},
-
+    container: {paddingTop: 10},
     menu: {
       alignItems: 'center',
       flexDirection: 'row',
@@ -12,9 +11,13 @@ export function useStyles() {
     },
     text: {
       fontFamily: fonts.family.syncopateRegular,
-      fontSize: fonts.size.typography_48,
+      fontSize: fonts.size.typography_44,
       fontWeight: '700',
-      // fontSize: 20,
+    },
+    subText: {
+      fontFamily: fonts.family.sfProRegular,
+      fontSize: fonts.size.typography_25,
+      textAlign: 'center',
     },
   });
 

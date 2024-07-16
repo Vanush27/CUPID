@@ -1,14 +1,17 @@
-import {SafeAreaView, ScrollView, View, Text} from 'react-native';
+import {SafeAreaView} from 'react-native';
 import {useStyles} from './styles';
 
 import React from 'react';
+import BackButton from '@components/BackButton';
+import {PaywallScreen} from '@ui-modules';
 
 const Paywall = () => {
   const {styles} = useStyles();
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.title}>{'Paywall'}</Text>
+      <BackButton colors={'rgba(237, 33, 124, 1)'} name={'chevron-back'} />
+      <PaywallScreen />
     </SafeAreaView>
   );
 };

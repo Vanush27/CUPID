@@ -10,6 +10,10 @@
       "sha1": "9984b1542bd1f676d5416b7ba6bf670c56620296"
     },
     {
+      "path": "src/assets/fonts/family/SFProDisplay-Regular.ttf",
+      "sha1": "e76ce993debe11fca9ad7a8f82022d40bab7074a"
+    },
+    {
       "path": "src/assets/fonts/family/Syncopate-Bold.ttf",
       "sha1": "9edd31de251b2cf453d5e70cd4171df223dcdce9"
     },
@@ -19,7 +23,7 @@
     },
     {
       "path": "src/assets/fonts/family/index.ts",
-      "sha1": "2b6a4bbc1de2fd0344f18104d8e6378ab8dafbc2"
+      "sha1": "6c23c2fc8c66fbc1df90504c04505e8806ed9b2b"
     }
   ]
 }

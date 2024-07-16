@@ -1,10 +1,10 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 
 import {ClockArrow, Menu} from '@assets/icons';
 
 import {useStyles} from './styles';
-import {useNavigation} from '@react-navigation/native';
 
 const HomeMenu = () => {
   const navigation = useNavigation<any>();
@@ -14,16 +14,25 @@ const HomeMenu = () => {
     navigation.openDrawer();
   };
 
+  const handleHistory = () => {
+    navigation.navigate('History');
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.menu}>
-        <Menu height={20} width={38} onPress={openDrawer} />
+        <TouchableOpacity onPress={openDrawer}>
+          <Menu height={20} width={38} />
+        </TouchableOpacity>
+
         <View>
-          <Text>CUPID</Text>
-          <Text>Regular</Text>
+          <Text style={styles.text}>CUPID</Text>
+          <Text style={styles.subText}>Regular</Text>
         </View>
 
-        <ClockArrow height={40} width={40} onPress={openDrawer} />
+        <TouchableOpacity onPress={handleHistory}>
+          <ClockArrow height={40} width={40} />
+        </TouchableOpacity>
       </View>
     </View>
   );

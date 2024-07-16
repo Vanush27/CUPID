@@ -1,16 +1,12 @@
+import {StyleSheet} from 'react-native';
 import {colors} from '@assets/colors';
 import {fonts} from '@assets/fonts';
-import {StyleSheet} from 'react-native';
 
 export function useStyles() {
   const styles = StyleSheet.create({
     container: {
-      // flex: 1,
-      paddingTop: 35,
-
+      paddingTop: 30,
       flexDirection: 'row',
-      justifyContent: 'center',
-      alignItems: 'center',
     },
     box: {
       width: 70,
@@ -19,28 +15,20 @@ export function useStyles() {
       backgroundColor: colors.primaryBlack,
       alignItems: 'center',
       justifyContent: 'center',
+      marginRight: 15,
     },
 
-    heart: {
-      // position: 'absolute',
-      // top: 10,
-      // left: 10,
-      // zIndex: 1,
-    },
     uploadBtn: {
-      width: 310,
+      width: 280,
       height: 70,
       borderRadius: 50,
-      // textAlign: 'center',
       backgroundColor: colors.primaryBlack,
       alignItems: 'center',
       justifyContent: 'center',
     },
     buttonText: {
-      color: '#ffffff',
-      fontSize: 26,
-      textAlign: 'center',
-      alignItems: 'center',
+      color: colors.white,
+      fontSize: fonts.size.typography_28,
     },
   });
 

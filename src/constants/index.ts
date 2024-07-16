@@ -8,7 +8,6 @@ export const IS_IOS = Platform.OS === 'ios';
 
 export const enum STORAGE_ITEMS {
   SPLASH_SCREEN = 'splashscreen',
-  ALREADY_LAUNCHED = 'isFirstLaunch',
 }
 
 export const METRIC = 'metric';

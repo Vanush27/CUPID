@@ -1,0 +1,81 @@
+import React from 'react';
+import {View, Text, Image, TouchableOpacity} from 'react-native';
+
+import {ImagesAssets} from '@assets/images/ImagesAssets';
+
+import LinearGradient from 'react-native-linear-gradient';
+
+import {useStyles} from './styles';
+
+const PaywallScreen = () => {
+  const {styles} = useStyles();
+
+  return (
+    <View style={styles.container}>
+      <Image source={ImagesAssets.matchImage} style={styles.matchImage} />
+
+      <View style={styles.benefitContainer}>
+        <View style={styles.benefit}>
+          <Text style={styles.emoji}>🔥</Text>
+          <Text style={styles.text}>Unlimited Rizz</Text>
+        </View>
+
+        <View style={styles.benefit}>
+          <Text style={styles.emoji}>🤝</Text>
+          <Text style={styles.text}> Trusted by Millions</Text>
+        </View>
+        <View style={styles.benefit}>
+          <Text style={styles.emoji}>🔥</Text>
+          <Text style={styles.text}>Coach Recommended</Text>
+        </View>
+        <View style={styles.benefit}>
+          <Text style={styles.emoji}>🛡️</Text>
+          <Text style={styles.text}> Proven to Get Dates</Text>
+        </View>
+        <View style={styles.benefit}>
+          <Text style={styles.emoji}>📈</Text>
+          <Text style={styles.text}>x10 More Responses</Text>
+        </View>
+        <View style={styles.benefit}>
+          <Text style={styles.emoji}>😈</Text>
+          <Text style={styles.text}>x8 More Dates</Text>
+        </View>
+      </View>
+
+      <View style={styles.buttonContainer}>
+        <LinearGradient
+          colors={['rgba(0, 166, 118, 1)', 'rgba(70, 177, 201, 1)']} // Gradient colors
+          // start={{x: 1, y: 0}} // Gradient start point
+          end={{x: 1, y: 0}} // Gradient end point
+          style={styles.buttonGradient}>
+          {/* <TouchableOpacity style={styles.button}> */}
+          <Text style={styles.rizzGod}>Rizz God</Text>
+          {/* </TouchableOpacity> */}
+        </LinearGradient>
+
+        <LinearGradient
+          colors={['#363636', '#363636']} // Gradient colors
+          start={{x: 1, y: 0}} // Gradient start point
+          end={{x: 1, y: 0}} // Gradient end point
+          // style={styles.buttonGradient}
+        >
+          <Text style={styles.buttonText}>Elevate Your Game</Text>
+        </LinearGradient>
+
+        <LinearGradient
+          colors={['rgba(0, 166, 118, 1)', 'rgba(0, 166, 118, 1)']} // Gradient colors
+          // start={{x: 1, y: 0}} // Gradient start point
+          // end={{x: 1, y: 0}} // Gradient end point
+          style={styles.buttonUnlockGradient}>
+          <TouchableOpacity>
+            <Text style={styles.trialText}>Unlock Free Trial</Text>
+          </TouchableOpacity>
+        </LinearGradient>
+
+        <Text style={styles.priceText}>risk-free trial then $8.67/week</Text>
+      </View>
+    </View>
+  );
+};
+
+export default PaywallScreen;

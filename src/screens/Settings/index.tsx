@@ -1,14 +1,16 @@
-import {SafeAreaView, ScrollView, View, Text} from 'react-native';
-import {useStyles} from './styles';
-
 import React from 'react';
+import {SafeAreaView} from 'react-native';
+
+import {Setting} from '@ui-modules';
+
+import {useStyles} from './styles';
 
 const Settings = () => {
   const {styles} = useStyles();
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.title}>{'Settings'}</Text>
+      <Setting />
     </SafeAreaView>
   );
 };

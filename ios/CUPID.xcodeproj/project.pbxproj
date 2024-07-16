@@ -10,16 +10,17 @@
 		00E356F31AD99517003FC87E /* CUPIDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CUPIDTests.m */; };
 		06EA1CAC16704958B681396F /* SFProDisplay-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7DE14038C3E489CB7AF8C15 /* SFProDisplay-Bold.ttf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-CUPID.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-CUPID.a */; };
+		1328C617F3FC419294316F26 /* index.ts in Resources */ = {isa = PBXBuildFile; fileRef = 613989AE52EE4BFEA7AF155B /* index.ts */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1A1CB2DE3D2444B4BC1B8EBB /* SFProDisplay-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F5398C9AD644C1AB847D28D /* SFProDisplay-Regular.ttf */; };
 		537C58206433404C96B47C95 /* Syncopate-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 808637AFBE264916920A1DDA /* Syncopate-Regular.ttf */; };
 		5576D09930F44079A3982C00 /* Syncopate-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BF542FB697048CC9FE55E05 /* Syncopate-Bold.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-CUPID-CUPIDTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-CUPID-CUPIDTests.a */; };
 		78BCAD0C58A89BBB2B769B4D /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 527607CEED8F900F1CBE8C07 /* PrivacyInfo.xcprivacy */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		CF5AFF3130164978A734CB0C /* SFProDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8396C51BDDBD4724BE7C1C34 /* SFProDisplay-Medium.ttf */; };
-		E4765063BE1D405DBC370DD4 /* index.ts in Resources */ = {isa = PBXBuildFile; fileRef = EFAF06290D484943B6FBA3B7 /* index.ts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,17 +47,18 @@
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-CUPID-CUPIDTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CUPID-CUPIDTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-CUPID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CUPID.debug.xcconfig"; path = "Target Support Files/Pods-CUPID/Pods-CUPID.debug.xcconfig"; sourceTree = "<group>"; };
 		3BF542FB697048CC9FE55E05 /* Syncopate-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Syncopate-Bold.ttf"; path = "../src/assets/fonts/family/Syncopate-Bold.ttf"; sourceTree = "<group>"; };
+		4F5398C9AD644C1AB847D28D /* SFProDisplay-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Regular.ttf"; path = "../src/assets/fonts/family/SFProDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		527607CEED8F900F1CBE8C07 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = CUPID/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-CUPID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CUPID.release.xcconfig"; path = "Target Support Files/Pods-CUPID/Pods-CUPID.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-CUPID-CUPIDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CUPID-CUPIDTests.debug.xcconfig"; path = "Target Support Files/Pods-CUPID-CUPIDTests/Pods-CUPID-CUPIDTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-CUPID.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CUPID.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		613989AE52EE4BFEA7AF155B /* index.ts */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = index.ts; path = ../src/assets/fonts/family/index.ts; sourceTree = "<group>"; };
 		808637AFBE264916920A1DDA /* Syncopate-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Syncopate-Regular.ttf"; path = "../src/assets/fonts/family/Syncopate-Regular.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = CUPID/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8396C51BDDBD4724BE7C1C34 /* SFProDisplay-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Medium.ttf"; path = "../src/assets/fonts/family/SFProDisplay-Medium.ttf"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-CUPID-CUPIDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CUPID-CUPIDTests.release.xcconfig"; path = "Target Support Files/Pods-CUPID-CUPIDTests/Pods-CUPID-CUPIDTests.release.xcconfig"; sourceTree = "<group>"; };
 		B7DE14038C3E489CB7AF8C15 /* SFProDisplay-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProDisplay-Bold.ttf"; path = "../src/assets/fonts/family/SFProDisplay-Bold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		EFAF06290D484943B6FBA3B7 /* index.ts */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = index.ts; path = ../src/assets/fonts/family/index.ts; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +130,8 @@
 				8396C51BDDBD4724BE7C1C34 /* SFProDisplay-Medium.ttf */,
 				3BF542FB697048CC9FE55E05 /* Syncopate-Bold.ttf */,
 				808637AFBE264916920A1DDA /* Syncopate-Regular.ttf */,
-				EFAF06290D484943B6FBA3B7 /* index.ts */,
+				4F5398C9AD644C1AB847D28D /* SFProDisplay-Regular.ttf */,
+				613989AE52EE4BFEA7AF155B /* index.ts */,
 			);
 			name = Resources;
 			path = "";
@@ -278,7 +281,8 @@
 				CF5AFF3130164978A734CB0C /* SFProDisplay-Medium.ttf in Resources */,
 				5576D09930F44079A3982C00 /* Syncopate-Bold.ttf in Resources */,
 				537C58206433404C96B47C95 /* Syncopate-Regular.ttf in Resources */,
-				E4765063BE1D405DBC370DD4 /* index.ts in Resources */,
+				1A1CB2DE3D2444B4BC1B8EBB /* SFProDisplay-Regular.ttf in Resources */,
+				1328C617F3FC419294316F26 /* index.ts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

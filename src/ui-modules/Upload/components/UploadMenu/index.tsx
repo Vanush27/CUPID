@@ -13,18 +13,14 @@ const UploadMenu = () => {
   const navigation = useNavigation<any>();
   const {styles} = useStyles();
 
-  const openDrawer = () => {
-    navigation.openDrawer();
-  };
-
   return (
     <View style={styles.container}>
       <View style={styles.wrapper}>
-        <BackButton />
+        <BackButton colors={'rgba(0, 0, 0, 1)'} name={'chevron-back'} />
         <View style={styles.menu}>
           <View>
-            <Text>CUPID</Text>
-            <Text>Regular</Text>
+            <Text style={styles.text}>CUPID</Text>
+            <Text style={styles.subText}>Regular</Text>
           </View>
         </View>
         <PlusBtn size={30} onPress={() => {}} name="plus" />

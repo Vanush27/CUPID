@@ -3,6 +3,7 @@ export interface IThemeFonts {
   syncopateRegular: string;
   sfProMedium: string;
   sfProBold: string;
+  sfProRegular: string;
 }
 
 export const family: IThemeFonts = {
@@ -10,4 +11,5 @@ export const family: IThemeFonts = {
   syncopateRegular: 'Syncopate-Regular',
   sfProMedium: 'SFProDisplay-Medium',
   sfProBold: 'SFProDisplay-Bold',
+  sfProRegular: 'SFProDisplay-Regular',
 };

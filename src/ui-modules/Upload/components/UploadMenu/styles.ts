@@ -5,9 +5,8 @@ import {StyleSheet} from 'react-native';
 export function useStyles() {
   const styles = StyleSheet.create({
     container: {
-      flex: 1,
+      flex: 0.1,
       paddingTop: 55,
-      backgroundColor: colors.backgroundMain,
     },
 
     wrapper: {
@@ -21,11 +20,16 @@ export function useStyles() {
       flexDirection: 'row',
       justifyContent: 'space-between',
     },
+
     text: {
       fontFamily: fonts.family.syncopateRegular,
-      fontSize: fonts.size.typography_48,
+      fontSize: fonts.size.typography_44,
       fontWeight: '700',
-      // fontSize: 20,
+    },
+    subText: {
+      fontFamily: fonts.family.sfProRegular,
+      fontSize: fonts.size.typography_25,
+      textAlign: 'center',
     },
   });
 

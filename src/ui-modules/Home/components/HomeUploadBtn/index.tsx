@@ -1,16 +1,17 @@
 import React from 'react';
-import {View, Text, Button, TouchableOpacity} from 'react-native';
-import {useStyles} from './styles';
+import {View, Text, TouchableOpacity} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
 import Heart from 'react-native-vector-icons/AntDesign';
+
+import {useStyles} from './styles';
 
 const HomeUploadBtn = () => {
   const navigation = useNavigation<any>();
   const {styles} = useStyles();
 
   const handleUpload = () => {
-    navigation.navigate('UploadMenu');
+    navigation.navigate('UploadFrame');
   };
 
   return (
@@ -19,9 +20,11 @@ const HomeUploadBtn = () => {
         <Heart name="heart" size={30} color={'red'} />
       </View>
 
-      <TouchableOpacity style={styles.uploadBtn} onPress={handleUpload}>
-        <Text style={styles.buttonText}>Upload Screenshot</Text>
-      </TouchableOpacity>
+      <View>
+        <TouchableOpacity style={styles.uploadBtn} onPress={handleUpload}>
+          <Text style={styles.buttonText}>Upload Screenshot</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };

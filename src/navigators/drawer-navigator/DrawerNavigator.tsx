@@ -1,14 +1,33 @@
 import {createDrawerNavigator} from '@react-navigation/drawer';
-import {Home, Settings} from '@screens';
+import {Home, Paywall, Settings} from '@screens';
 // import SettingsIcon from 'react-native-vector-icons/AntDesign';
-import AddIcon from 'react-native-vector-icons/FontAwesome5';
+import HomeIcon from 'react-native-vector-icons/FontAwesome5';
+import SettingsIcon from 'react-native-vector-icons/Feather';
+import PayIcon from 'react-native-vector-icons/Feather';
+
 // import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const Drawer = createDrawerNavigator();
 
-const addCountryIcon = (focused: boolean) => {
+const homeIcon = (focused: boolean) => {
   return (
-    <AddIcon color={focused ? '#E68406' : 'black'} name="city" size={24} />
+    <HomeIcon color={focused ? '#E68406' : 'black'} name="home" size={24} />
+  );
+};
+
+const settingsIcon = (focused: boolean) => {
+  return (
+    <SettingsIcon
+      color={focused ? '#E68406' : 'black'}
+      name="settings"
+      size={24}
+    />
+  );
+};
+
+const payIcon = (focused: boolean) => {
+  return (
+    <PayIcon color={focused ? '#E68406' : 'black'} name="target" size={24} />
   );
 };
 
@@ -26,32 +45,23 @@ const DrawerNavigator = () => {
         component={Home}
         name="Home"
         options={{
-          drawerIcon: ({focused, size}) => addCountryIcon(focused),
+          drawerIcon: ({focused, size}) => homeIcon(focused),
         }}
-
-        // options={() => ({
-        //   tabBarIcon: ({focused}) => weatherIcon(focused),
-        //   title: 'Home',
-        //   headerShown: false,
-        //   tabBarActiveTintColor: '#E37C07',
-        // })}
       />
 
-      {/* <Drawer.Screen
-        component={Settings}
-        name="Settings"
-        options={() => ({
-          // tabBarIcon: ({focused}) => settingIcon(focused),
-          title: 'Settings',
-          headerShown: false,
-          tabBarActiveTintColor: '#E37C07',
-        })}
-      /> */}
+      <Drawer.Screen
+        name="Paywall"
+        component={Paywall}
+        options={{
+          drawerIcon: ({focused, size}) => payIcon(focused),
+        }}
+      />
+
       <Drawer.Screen
         name="Settings"
         component={Settings}
         options={{
-          drawerIcon: ({focused, size}) => addCountryIcon(focused),
+          drawerIcon: ({focused, size}) => settingsIcon(focused),
         }}
       />
     </Drawer.Navigator>
