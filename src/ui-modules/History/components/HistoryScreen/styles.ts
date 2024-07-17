@@ -1,15 +1,7 @@
-import {colors} from '@assets/colors';
-import {fonts} from '@assets/fonts';
 import {StyleSheet} from 'react-native';
 
 export function useStyles() {
   const styles = StyleSheet.create({
-    container: {
-      // flex: 1,
-      // backgroundColor: '#FFB6C1',
-      padding: 10,
-    },
-
     title: {
       fontSize: 24,
       fontWeight: 'bold',
@@ -18,24 +10,23 @@ export function useStyles() {
     },
     grid: {
       justifyContent: 'center',
+      paddingBottom: 100,
     },
     imageContainer: {
-      // position: 'relative',
       margin: 5,
     },
     image: {
-      width: 100,
+      width: 111,
       height: 150,
-      borderRadius: 10,
+      borderRadius: 19,
       backgroundColor: '#000',
       justifyContent: 'center',
       alignItems: 'center',
     },
     deleteButton: {
       position: 'absolute',
-      top: 5,
+      bottom: 5,
       right: 5,
-      backgroundColor: 'rgba(0,0,0,0.6)',
       borderRadius: 15,
       padding: 2,
     },

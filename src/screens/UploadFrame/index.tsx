@@ -1,11 +1,5 @@
-import {ScrollView, View} from 'react-native';
-import {
-  CupidFrame,
-  HomeMenu,
-  HomeUploadBtn,
-  HomeUploadImage,
-  UploadMenu,
-} from '@ui-modules';
+import {ScrollView} from 'react-native';
+import {CupidFrame, UploadMenu} from '@ui-modules';
 
 import {useStyles} from './styles';
 

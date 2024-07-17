@@ -1,5 +1,5 @@
 import {useAppDispatch, useAppSelector} from '@hooks';
-import {addImages} from '@redux/slices/imageSlice';
+import {addImages, deleteImage} from '@redux/slices/imageSlice';
 
 export const useAppImages = () => {
   const dispatch = useAppDispatch();
@@ -10,9 +10,14 @@ export const useAppImages = () => {
     dispatch(addImages(photo));
   };
 
+  const dispatchDeleteImage = (photo: any) => {
+    dispatch(deleteImage(photo));
+  };
+
   return {
     images,
 
     dispatchSetImage,
+    dispatchDeleteImage,
   };
 };

@@ -1,16 +1,13 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-import {ClockArrow, Menu} from '@assets/icons';
-
-import {useStyles} from './styles';
-import {useNavigation} from '@react-navigation/native';
 import BackButton from '@components/BackButton';
 
 import PlusBtn from 'react-native-vector-icons/AntDesign';
 
+import {useStyles} from './styles';
+
 const UploadMenu = () => {
-  const navigation = useNavigation<any>();
   const {styles} = useStyles();
 
   return (
@@ -23,7 +20,7 @@ const UploadMenu = () => {
             <Text style={styles.subText}>Regular</Text>
           </View>
         </View>
-        <PlusBtn size={30} onPress={() => {}} name="plus" />
+        <PlusBtn size={32} onPress={() => {}} name="plus" />
       </View>
     </View>
   );

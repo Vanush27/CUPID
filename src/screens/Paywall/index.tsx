@@ -1,9 +1,10 @@
-import {SafeAreaView} from 'react-native';
-import {useStyles} from './styles';
-
 import React from 'react';
+import {SafeAreaView} from 'react-native';
+
 import BackButton from '@components/BackButton';
 import {PaywallScreen} from '@ui-modules';
+
+import {useStyles} from './styles';
 
 const Paywall = () => {
   const {styles} = useStyles();

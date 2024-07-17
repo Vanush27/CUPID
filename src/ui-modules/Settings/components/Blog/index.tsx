@@ -1,9 +1,14 @@
 import React from 'react';
-import {ScrollView, Text, StyleSheet, View} from 'react-native';
+import {ScrollView, Text} from 'react-native';
+import BackButton from '@components/BackButton';
 
-const Article = () => {
+import {useStyles} from './styles';
+
+const Blog = () => {
+  const {styles} = useStyles();
   return (
     <ScrollView style={styles.container}>
+      <BackButton colors={'white'} name={'chevron-back'} />
       <Text style={styles.header}>How to quit social media</Text>
       <Text style={styles.subHeader}>and why is it so hard for your brain</Text>
 
@@ -52,31 +57,4 @@ const Article = () => {
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: 50,
-    padding: 20,
-    backgroundColor: '#000',
-  },
-  header: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#fff',
-    marginBottom: 10,
-  },
-  subHeader: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    color: '#fff',
-    marginTop: 20,
-    marginBottom: 10,
-  },
-  paragraph: {
-    fontSize: 16,
-    color: '#fff',
-    marginBottom: 15,
-  },
-});
-
-export default Article;
+export default Blog;

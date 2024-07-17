@@ -8,7 +8,8 @@ import SplashScreen from 'react-native-splash-screen';
 import {STORAGE_ITEMS} from '@constants';
 import {useAsyncStorage} from '@hooks';
 import {Provider} from 'react-redux';
-import {store} from '@redux/store';
+import {persist, store} from '@redux/store';
+import {PersistGate} from 'redux-persist/integration/react';
 
 export const AppContextsProvider = ({children}: IAppContextsProviderProps) => {
   const {getItem, setItem} = useAsyncStorage();
@@ -33,13 +34,11 @@ export const AppContextsProvider = ({children}: IAppContextsProviderProps) => {
     <SafeAreaProvider initialMetrics={getInitialSafeAreaMetrics}>
       <GestureHandlerRootView style={{flex: 1}}>
         <Provider store={store}>
-          {/* <PersistGate loading={null} persistor={persist}> */}
-          <NavigationContainer>{children}</NavigationContainer>
-          {/* </PersistGate> */}
+          <PersistGate loading={null} persistor={persist}>
+            <NavigationContainer>{children}</NavigationContainer>
+          </PersistGate>
         </Provider>
       </GestureHandlerRootView>
-      {/* </ThemeProvider> */}
-      {/* </QueryClientProvider> */}
     </SafeAreaProvider>
   );
 };

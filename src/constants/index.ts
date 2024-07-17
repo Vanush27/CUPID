@@ -9,6 +9,3 @@ export const IS_IOS = Platform.OS === 'ios';
 export const enum STORAGE_ITEMS {
   SPLASH_SCREEN = 'splashscreen',
 }
-
-export const METRIC = 'metric';
-export const IMPERIAL = 'imperial';

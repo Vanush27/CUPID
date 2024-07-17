@@ -7,7 +7,10 @@ const AppStack = createNativeStackNavigator();
 
 const AppNavigator = () => {
   return (
-    <AppStack.Navigator screenOptions={{headerShown: false}}>
+    <AppStack.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}>
       <AppStack.Screen component={DrawerNavigator} name="DrawerNavigator" />
       <AppStack.Screen component={UploadFrame} name="UploadFrame" />
       <AppStack.Screen component={History} name="History" />

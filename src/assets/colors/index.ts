@@ -14,9 +14,7 @@ export const colors: IThemeColors = {
   white: '#FFFFFF',
   green: '#00A676',
   backgroundMain: '#FC92C0',
-
   ping: '#ED217C',
   pingGradient: '#5C1E35',
-
   tipsPing: '#FD96C3',
 };

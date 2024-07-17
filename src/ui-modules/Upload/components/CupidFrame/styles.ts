@@ -54,20 +54,23 @@ export function useStyles() {
       marginBottom: 10,
       color: '#000',
     },
-    rizzButton: {
-      backgroundColor: '#000',
-      padding: 10,
-      borderRadius: 10,
-      alignItems: 'center',
-      marginBottom: 20,
+    lineContainer: {
+      flexDirection: 'row',
+
+      padding: 20,
     },
+    line: {
+      marginTop: 8,
+      flex: 1,
+      height: 2,
+      backgroundColor: 'rgba(0, 0, 0, 0.25)',
+    },
+
     rizzButtonText: {
-      color: '#FFF',
-      fontSize: 16,
+      color: 'rgba(255, 255, 255, 1)',
+      fontSize: fonts.size.typography_28,
     },
-    repliesContainer: {
-      // flexDirection: 'column',
-    },
+
     reply: {
       flexDirection: 'row',
       alignItems: 'center',
@@ -82,6 +85,33 @@ export function useStyles() {
       fontSize: 23,
       fontFamily: fonts.family.sfProBold,
       fontWeight: '400',
+    },
+
+    box: {
+      width: 55,
+      height: 55,
+      borderRadius: 35,
+      backgroundColor: colors.primaryBlack,
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginRight: 15,
+
+      position: 'absolute',
+      top: 9,
+      left: 3,
+      zIndex: 1,
+    },
+
+    rizzButton: {
+      backgroundColor: 'rgba(0, 0, 0, 1)',
+      padding: 13,
+      borderRadius: 50,
+      alignItems: 'center',
+      position: 'absolute',
+      top: 8,
+      right: 3,
+      width: 290,
+      zIndex: 1,
     },
   });
 

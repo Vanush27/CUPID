@@ -1,6 +1,4 @@
-// import {useTheme} from '@rneui/themed';
 import {colors} from '@assets/colors';
-import {fonts} from '@assets/fonts';
 import {StyleSheet} from 'react-native';
 
 export function useStyles() {

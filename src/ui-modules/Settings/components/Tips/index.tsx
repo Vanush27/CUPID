@@ -1,14 +1,11 @@
 import React from 'react';
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  StyleSheet,
-  ScrollView,
-} from 'react-native';
+import {View, Text, TouchableOpacity, ScrollView} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
-import {useStyles} from './styles';
 import {useNavigation} from '@react-navigation/native';
+
+import BackButton from '@components/BackButton';
+
+import {useStyles} from './styles';
 
 const tips = [
   'What Attracts People?',
@@ -22,15 +19,13 @@ const tips = [
 ];
 
 const Tips = () => {
-  const navigation = useNavigation();
+  const {navigate} = useNavigation<any>();
   const {styles} = useStyles();
 
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => navigation.goBack()}>
-          <Icon name="arrow-back" size={24} color="#fff" />
-        </TouchableOpacity>
+        <BackButton colors={'white'} name={'chevron-back'} />
         <Text style={styles.title}>TIPS</Text>
       </View>
       <ScrollView contentContainerStyle={styles.content}>
@@ -38,9 +33,9 @@ const Tips = () => {
           <TouchableOpacity
             key={index}
             style={styles.tipButton}
-            onPress={() => navigation.navigate('Blog')}>
+            onPress={() => navigate('Blog')}>
             <Text style={styles.tipText}>{tip}</Text>
-            <Icon name="chevron-right" size={24} color="#000" />
+            <Icon name="chevron-right" size={30} color="#000" />
           </TouchableOpacity>
         ))}
       </ScrollView>

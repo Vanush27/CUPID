@@ -1,55 +1,32 @@
+import {StyleSheet} from 'react-native';
 import {colors} from '@assets/colors';
 import {fonts} from '@assets/fonts';
 import {size} from '@assets/fonts/size';
-import {StyleSheet} from 'react-native';
 
 export function useStyles() {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      // backgroundColor: '#000',
-      // alignItems: 'center',
       justifyContent: 'space-evenly',
-      // paddingTop: 40,
       marginLeft: 20,
       marginRight: 20,
     },
 
-    matchImage: {
-      // margin: 10,
-    },
     benefitContainer: {
-      // flex: 1,
-      // alignContent: 'center',
       alignItems: 'flex-start',
-      // marginTop: 20,
-      // width: '100%',
       justifyContent: 'space-around',
-      // marginLeft: 45,
     },
     benefit: {
       margin: 20,
       flexDirection: 'row',
-      justifyContent: 'space-around',
-      // color: colors.white,
-      // fontFamily: fonts.family.sfProBold,
-      // fontSize: size.typography_25,
-      // fontWeight: '400',
+      alignItems: 'flex-end',
       marginVertical: 5,
     },
     emoji: {
-      fontSize: 24,
-      // paddingRight: 20,
-      // paddingLeft: 20,
-      // fontWeight: '400',
-      // fontSize: 25,
+      fontSize: 26,
     },
     text: {
-      // paddingLeft: 20,
-      // paddingRight: 20,
-      // color: 'green',
       marginLeft: 20,
-
       color: colors.white,
       fontFamily: fonts.family.sfProBold,
       fontSize: size.typography_25,
@@ -59,17 +36,17 @@ export function useStyles() {
       alignItems: 'center',
       backgroundColor: '#363636',
       borderRadius: 10,
-      padding: 40,
+      padding: 35,
       shadowOffset: {
-        width: 2,
+        width: 3,
         height: 3,
       },
-
+      borderColor: 'rgba(0, 166, 118, 1)',
       borderWidth: 3,
       shadowColor: 'rgba(0, 166, 118, 1)',
-      shadowOpacity: 0.9, // Shadow opacity for iOS
-      shadowRadius: 7, // Shadow radius for iOS
-      elevation: 5, // Shadow for Android
+      shadowOpacity: 0.9,
+      shadowRadius: 10,
+      elevation: 5,
 
       position: 'relative',
     },
@@ -83,7 +60,7 @@ export function useStyles() {
     },
     buttonGradient: {
       position: 'absolute',
-      top: -10,
+      top: -20,
 
       borderRadius: 50,
       padding: 10,
@@ -94,6 +71,9 @@ export function useStyles() {
       fontSize: 30,
       fontFamily: fonts.family.sfProBold,
       fontWeight: '900',
+    },
+    elevate: {
+      marginBottom: 12,
     },
     trialText: {
       color: 'rgba(255, 255, 255, 1)',

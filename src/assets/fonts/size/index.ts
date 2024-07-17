@@ -3,13 +3,10 @@ export interface IThemeSize {
   typography_14: number;
   typography_16: number;
   typography_18: number;
-
-  typography_36: number;
-
   typography_25: number;
   typography_28: number;
+  typography_34: number;
   typography_44: number;
-
   typography_60: number;
 }
 export interface ILineHeight {
@@ -19,7 +16,7 @@ export interface ILineHeight {
   lineHeight_18: number;
   lineHeight_24: number;
   lineHeight_30: number;
-  lineHeight_36: number;
+  lineHeight_34: number;
   lineHeight_48: number;
   lineHeight_60: number;
 }
@@ -30,7 +27,7 @@ export const size: IThemeSize = {
   typography_18: 18,
   typography_25: 25,
   typography_28: 28,
-  typography_36: 36,
+  typography_34: 34,
   typography_44: 44,
   typography_60: 60,
 };
@@ -41,7 +38,7 @@ export const lineHeight: ILineHeight = {
   lineHeight_18: 1.4 * size.typography_18,
   lineHeight_24: 1.4 * size.typography_25,
   lineHeight_30: 1.4 * size.typography_28,
-  lineHeight_36: 1.4 * size.typography_36,
+  lineHeight_34: 1.4 * size.typography_34,
   lineHeight_48: 1.4 * size.typography_44,
   lineHeight_60: 1.4 * size.typography_60,
 };

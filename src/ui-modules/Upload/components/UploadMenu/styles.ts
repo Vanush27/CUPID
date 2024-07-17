@@ -1,6 +1,5 @@
-import {colors} from '@assets/colors';
-import {fonts} from '@assets/fonts';
 import {StyleSheet} from 'react-native';
+import {fonts} from '@assets/fonts';
 
 export function useStyles() {
   const styles = StyleSheet.create({
@@ -13,7 +12,7 @@ export function useStyles() {
       flexDirection: 'row',
       justifyContent: 'space-between',
       alignItems: 'center',
-      padding: 15,
+      padding: 13,
     },
     menu: {
       alignItems: 'center',
@@ -28,6 +27,7 @@ export function useStyles() {
     },
     subText: {
       fontFamily: fonts.family.sfProRegular,
+      fontWeight: 'light',
       fontSize: fonts.size.typography_25,
       textAlign: 'center',
     },

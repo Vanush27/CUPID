@@ -1,9 +1,8 @@
 import React from 'react';
 import {View, Text, Image, TouchableOpacity} from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 
 import {ImagesAssets} from '@assets/images/ImagesAssets';
-
-import LinearGradient from 'react-native-linear-gradient';
 
 import {useStyles} from './styles';
 
@@ -12,7 +11,7 @@ const PaywallScreen = () => {
 
   return (
     <View style={styles.container}>
-      <Image source={ImagesAssets.matchImage} style={styles.matchImage} />
+      <Image source={ImagesAssets.matchImage} />
 
       <View style={styles.benefitContainer}>
         <View style={styles.benefit}>
@@ -44,28 +43,22 @@ const PaywallScreen = () => {
 
       <View style={styles.buttonContainer}>
         <LinearGradient
-          colors={['rgba(0, 166, 118, 1)', 'rgba(70, 177, 201, 1)']} // Gradient colors
-          // start={{x: 1, y: 0}} // Gradient start point
-          end={{x: 1, y: 0}} // Gradient end point
+          colors={['rgba(0, 166, 118, 1)', 'rgba(70, 177, 201, 1)']}
+          end={{x: 1, y: 0}}
           style={styles.buttonGradient}>
-          {/* <TouchableOpacity style={styles.button}> */}
           <Text style={styles.rizzGod}>Rizz God</Text>
-          {/* </TouchableOpacity> */}
         </LinearGradient>
 
         <LinearGradient
-          colors={['#363636', '#363636']} // Gradient colors
-          start={{x: 1, y: 0}} // Gradient start point
-          end={{x: 1, y: 0}} // Gradient end point
-          // style={styles.buttonGradient}
-        >
+          colors={['#363636', '#363636']}
+          start={{x: 1, y: 0}}
+          end={{x: 1, y: 0}}
+          style={styles.elevate}>
           <Text style={styles.buttonText}>Elevate Your Game</Text>
         </LinearGradient>
 
         <LinearGradient
-          colors={['rgba(0, 166, 118, 1)', 'rgba(0, 166, 118, 1)']} // Gradient colors
-          // start={{x: 1, y: 0}} // Gradient start point
-          // end={{x: 1, y: 0}} // Gradient end point
+          colors={['rgba(0, 166, 118, 1)', 'rgba(0, 166, 118, 1)']}
           style={styles.buttonUnlockGradient}>
           <TouchableOpacity>
             <Text style={styles.trialText}>Unlock Free Trial</Text>

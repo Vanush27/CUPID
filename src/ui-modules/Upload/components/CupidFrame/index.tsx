@@ -1,22 +1,21 @@
-import React, {useCallback, useState} from 'react';
+import React, {useState} from 'react';
 import {View, Text, TouchableOpacity, Image} from 'react-native';
+
 import Icon from 'react-native-vector-icons/Ionicons';
 import BrainIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 import CrownIcon from 'react-native-vector-icons/FontAwesome5';
+import Heart from 'react-native-vector-icons/AntDesign';
 
-import {useStyles} from './styles';
 import {launchImageLibrary} from 'react-native-image-picker';
 import {useAppImages} from '@redux/hooks/useAppImages';
 
+import {useStyles} from './styles';
+
 const CupidFrame = () => {
   const {styles} = useStyles();
-
   const [imageUri, setImageUri] = useState<string>();
 
   const {dispatchSetImage} = useAppImages();
-
-  // TODO
-  const [imageUris, setImageUris] = useState<string[]>([]);
 
   const openImagePicker = () => {
     const options: any = {
@@ -26,11 +25,8 @@ const CupidFrame = () => {
 
     launchImageLibrary(options, response => {
       if (response.assets && response.assets.length > 0) {
-        // setImageUris((prevUris: any) => [
-        //   ...prevUris,
-        //   response?.assets?.[0].uri,
-        // ]);
         dispatchSetImage(response?.assets[0].uri);
+        setImageUri(response?.assets?.[0].uri);
       }
     });
   };
@@ -40,20 +36,29 @@ const CupidFrame = () => {
       <TouchableOpacity
         onPress={openImagePicker}
         style={styles.screenshotContainer}>
-        {imageUris?.length ? (
+        {imageUri?.length ? (
           <Image source={{uri: imageUri}} style={styles.screenshot} />
         ) : (
           <Text style={styles.screenshotText}>User's screenshot</Text>
         )}
       </TouchableOpacity>
 
-      <Text style={styles.tapToCopyText}>👇 Tap to copy rizz 👇</Text>
+      <View style={styles.lineContainer}>
+        <View style={styles.line} />
 
-      <TouchableOpacity style={styles.rizzButton}>
-        <Text style={styles.rizzButtonText}>Get Rizz Reply</Text>
-      </TouchableOpacity>
+        <Text style={styles.tapToCopyText}>👇 Tap to copy rizz 👇</Text>
+        <View style={styles.line} />
+      </View>
 
-      <View style={styles.repliesContainer}>
+      <View>
+        <View style={styles.box}>
+          <Heart name="heart" size={30} color={'red'} />
+        </View>
+
+        <TouchableOpacity style={styles.rizzButton}>
+          <Text style={styles.rizzButtonText}>Get Rizz Reply</Text>
+        </TouchableOpacity>
+
         <View style={styles.reply}>
           <Icon name="heart" size={20} color="#000" />
           <Text style={styles.replyText}>

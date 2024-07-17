@@ -1,11 +1,9 @@
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {Home, Paywall, Settings} from '@screens';
-// import SettingsIcon from 'react-native-vector-icons/AntDesign';
+
 import HomeIcon from 'react-native-vector-icons/FontAwesome5';
 import SettingsIcon from 'react-native-vector-icons/Feather';
 import PayIcon from 'react-native-vector-icons/Feather';
-
-// import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const Drawer = createDrawerNavigator();
 
@@ -36,9 +34,6 @@ const DrawerNavigator = () => {
     <Drawer.Navigator
       screenOptions={{
         headerShown: false,
-        drawerStyle: {
-          width: 240,
-        },
       }}
       initialRouteName="Home">
       <Drawer.Screen

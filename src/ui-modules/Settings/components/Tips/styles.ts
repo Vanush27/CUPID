@@ -1,6 +1,7 @@
+import {StyleSheet} from 'react-native';
+import {size} from '@assets/fonts/size';
 import {colors} from '@assets/colors';
 import {fonts} from '@assets/fonts';
-import {StyleSheet} from 'react-native';
 
 export function useStyles() {
   const styles = StyleSheet.create({
@@ -18,8 +19,9 @@ export function useStyles() {
       flex: 1,
       textAlign: 'center',
       color: colors.white,
-      fontSize: 24,
-      fontWeight: 'bold',
+      fontSize: size.typography_44,
+      fontWeight: '700',
+      fontFamily: fonts.family.syncopateBold,
     },
     content: {
       padding: 10,
@@ -29,15 +31,15 @@ export function useStyles() {
       justifyContent: 'space-between',
       alignItems: 'center',
       backgroundColor: colors.tipsPing,
-      padding: 15,
-      borderRadius: 10,
-      marginBottom: 10,
+      padding: 30,
+      borderRadius: 25,
+      marginBottom: 15,
     },
     tipText: {
       color: colors.primaryBlack,
       fontSize: 28,
       fontFamily: fonts.family.sfProBold,
-      fontWeight: 700,
+      fontWeight: '700',
       flexShrink: 1,
     },
   });
