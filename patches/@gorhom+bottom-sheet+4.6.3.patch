@@ -1,0 +1,53 @@
+diff --git a/node_modules/@gorhom/bottom-sheet/src/components/bottomSheetBackdrop/styles.ts b/node_modules/@gorhom/bottom-sheet/src/components/bottomSheetBackdrop/styles.ts
+index 1e1e596..0e2509d 100644
+--- a/node_modules/@gorhom/bottom-sheet/src/components/bottomSheetBackdrop/styles.ts
++++ b/node_modules/@gorhom/bottom-sheet/src/components/bottomSheetBackdrop/styles.ts
+@@ -3,5 +3,6 @@ import { StyleSheet } from 'react-native';
+ export const styles = StyleSheet.create({
+   container: {
+     backgroundColor: 'black',
++    
+   },
+ });
+diff --git a/node_modules/@gorhom/bottom-sheet/src/components/bottomSheetBackdropContainer/styles.ts b/node_modules/@gorhom/bottom-sheet/src/components/bottomSheetBackdropContainer/styles.ts
+index 7a3253f..0366bd8 100644
+--- a/node_modules/@gorhom/bottom-sheet/src/components/bottomSheetBackdropContainer/styles.ts
++++ b/node_modules/@gorhom/bottom-sheet/src/components/bottomSheetBackdropContainer/styles.ts
+@@ -7,5 +7,6 @@ export const styles = StyleSheet.create({
+     left: 0,
+     right: 0,
+     bottom: 0,
++
+   },
+ });
+diff --git a/node_modules/@gorhom/bottom-sheet/src/components/bottomSheetBackground/styles.ts b/node_modules/@gorhom/bottom-sheet/src/components/bottomSheetBackground/styles.ts
+index cac9b93..793ed84 100644
+--- a/node_modules/@gorhom/bottom-sheet/src/components/bottomSheetBackground/styles.ts
++++ b/node_modules/@gorhom/bottom-sheet/src/components/bottomSheetBackground/styles.ts
+@@ -3,6 +3,6 @@ import { StyleSheet } from 'react-native';
+ export const styles = StyleSheet.create({
+   container: {
+     backgroundColor: 'white',
+-    borderRadius: 15,
++    borderRadius: 50,
+   },
+ });
+diff --git a/node_modules/@gorhom/bottom-sheet/src/components/bottomSheetHandleContainer/BottomSheetHandleContainer.tsx b/node_modules/@gorhom/bottom-sheet/src/components/bottomSheetHandleContainer/BottomSheetHandleContainer.tsx
+index 59f90ba..0e5b0cc 100644
+--- a/node_modules/@gorhom/bottom-sheet/src/components/bottomSheetHandleContainer/BottomSheetHandleContainer.tsx
++++ b/node_modules/@gorhom/bottom-sheet/src/components/bottomSheetHandleContainer/BottomSheetHandleContainer.tsx
+@@ -94,12 +94,12 @@ function BottomSheetHandleContainerComponent({
+         key="BottomSheetHandleContainer"
+         onLayout={handleContainerLayout}
+       >
+-        <HandleComponent
++        {/* <HandleComponent
+           animatedIndex={animatedIndex}
+           animatedPosition={animatedPosition}
+           style={_providedHandleStyle}
+           indicatorStyle={_providedIndicatorStyle}
+-        />
++        /> */}
+       </Animated.View>
+     </PanGestureHandler>
+   ) : null;

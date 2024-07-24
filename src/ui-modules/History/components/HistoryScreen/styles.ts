@@ -1,7 +1,10 @@
+import {fonts} from '@assets/fonts';
 import {StyleSheet} from 'react-native';
 
 export function useStyles() {
   const styles = StyleSheet.create({
+    container: {},
+
     title: {
       fontSize: 24,
       fontWeight: 'bold',
@@ -22,6 +25,24 @@ export function useStyles() {
       backgroundColor: '#000',
       justifyContent: 'center',
       alignItems: 'center',
+    },
+    screenshotTextUser: {
+      position: 'absolute',
+      color: 'white',
+      bottom: 70,
+      left: 30,
+      fontSize: 15,
+      fontFamily: fonts.family.sfProBold,
+      fontWeight: '500',
+    },
+    screenshotText: {
+      position: 'absolute',
+      color: 'white',
+      bottom: 53,
+      left: 20,
+      fontSize: 15,
+      fontFamily: fonts.family.sfProBold,
+      fontWeight: '500',
     },
     deleteButton: {
       position: 'absolute',

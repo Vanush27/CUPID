@@ -8,6 +8,7 @@ export {default as CupidFrame} from './Upload/components/CupidFrame';
 export {default as PaywallScreen} from './Paywall/components/PaywallScreen';
 
 export {default as Setting} from './Settings/components/Setting';
+export {default as MyBottomSheet} from './Settings/components/MYBottomSheet';
 export {default as Blog} from './Settings/components/Blog';
 export {default as Tips} from './Settings/components/Tips';
 

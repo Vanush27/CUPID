@@ -1,10 +1,11 @@
 import React from 'react';
-import {View, Text, TouchableOpacity} from 'react-native';
+import {View, Text, TouchableOpacity, Image} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
 import Heart from 'react-native-vector-icons/AntDesign';
 
 import {useStyles} from './styles';
+import {ImagesAssets} from '@assets/images/ImagesAssets';
 
 const HomeUploadBtn = () => {
   const navigation = useNavigation<any>();
@@ -17,7 +18,8 @@ const HomeUploadBtn = () => {
   return (
     <View style={styles.container}>
       <View style={styles.box}>
-        <Heart name="heart" size={30} color={'red'} />
+        <Image source={ImagesAssets.love} />
+        {/* <Heart name="heart" size={30} color={'red'} /> */}
       </View>
 
       <View>

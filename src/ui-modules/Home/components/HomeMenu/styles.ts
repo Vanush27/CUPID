@@ -4,6 +4,22 @@ import {fonts} from '@assets/fonts';
 export function useStyles() {
   const styles = StyleSheet.create({
     container: {paddingTop: 10},
+
+    // container: {
+    //   // flex: 1,
+    //   // justifyContent: 'center',
+    //   // alignItems: 'center',
+    // },
+    contentContainer: {
+      // flex: 1,
+      alignItems: 'center',
+      backgroundColor: 'red',
+    },
+
+    boxTitile: {
+      paddingRight: 30,
+      alignContent: 'center',
+    },
     menu: {
       alignItems: 'center',
       flexDirection: 'row',
@@ -11,8 +27,8 @@ export function useStyles() {
     },
     text: {
       fontFamily: fonts.family.syncopateRegular,
-      fontSize: fonts.size.typography_44,
-      fontWeight: '700',
+      fontSize: 40,
+      fontWeight: '600',
     },
     subText: {
       fontFamily: fonts.family.sfProRegular,

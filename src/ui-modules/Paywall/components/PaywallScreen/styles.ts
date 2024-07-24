@@ -13,8 +13,7 @@ export function useStyles() {
     },
 
     benefitContainer: {
-      alignItems: 'flex-start',
-      justifyContent: 'space-around',
+      marginBottom: 20,
     },
     benefit: {
       margin: 20,
@@ -23,7 +22,7 @@ export function useStyles() {
       marginVertical: 5,
     },
     emoji: {
-      fontSize: 26,
+      fontSize: 32,
     },
     text: {
       marginLeft: 20,

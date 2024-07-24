@@ -38,7 +38,7 @@ export function useStyles() {
     tipText: {
       color: colors.primaryBlack,
       fontSize: 28,
-      fontFamily: fonts.family.sfProBold,
+      // fontFamily: fonts.family.sfProBold,
       fontWeight: '700',
       flexShrink: 1,
     },

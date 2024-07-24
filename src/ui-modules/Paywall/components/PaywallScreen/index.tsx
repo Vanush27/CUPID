@@ -5,8 +5,9 @@ import LinearGradient from 'react-native-linear-gradient';
 import {ImagesAssets} from '@assets/images/ImagesAssets';
 
 import {useStyles} from './styles';
+import {useNavigation} from '@react-navigation/native';
 
-const PaywallScreen = () => {
+const PaywallScreen = ({handleHome}: any) => {
   const {styles} = useStyles();
 
   return (
@@ -21,7 +22,7 @@ const PaywallScreen = () => {
 
         <View style={styles.benefit}>
           <Text style={styles.emoji}>🤝</Text>
-          <Text style={styles.text}> Trusted by Millions</Text>
+          <Text style={styles.text}>Trusted by Millions</Text>
         </View>
         <View style={styles.benefit}>
           <Text style={styles.emoji}>🔥</Text>
@@ -29,7 +30,7 @@ const PaywallScreen = () => {
         </View>
         <View style={styles.benefit}>
           <Text style={styles.emoji}>🛡️</Text>
-          <Text style={styles.text}> Proven to Get Dates</Text>
+          <Text style={styles.text}>Proven to Get Dates</Text>
         </View>
         <View style={styles.benefit}>
           <Text style={styles.emoji}>📈</Text>
@@ -60,7 +61,7 @@ const PaywallScreen = () => {
         <LinearGradient
           colors={['rgba(0, 166, 118, 1)', 'rgba(0, 166, 118, 1)']}
           style={styles.buttonUnlockGradient}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={handleHome}>
             <Text style={styles.trialText}>Unlock Free Trial</Text>
           </TouchableOpacity>
         </LinearGradient>

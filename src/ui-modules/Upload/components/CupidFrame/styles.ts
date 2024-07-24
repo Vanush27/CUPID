@@ -1,12 +1,24 @@
-import {colors} from '@assets/colors';
 import {fonts} from '@assets/fonts';
 import {StyleSheet} from 'react-native';
 
 export function useStyles() {
   const styles = StyleSheet.create({
     container: {
-      flex: 0.8,
+      flex: 1,
+      paddingBottom: 150,
       padding: 15,
+    },
+    text: {
+      padding: 20,
+    },
+    buttonContainer: {
+      marginTop: 20,
+      alignItems: 'center',
+    },
+    fixedButtonContainer: {
+      position: 'absolute',
+      bottom: 30,
+      left: 100,
     },
 
     screenshotContainer: {
@@ -21,17 +33,6 @@ export function useStyles() {
       marginBottom: 20,
     },
 
-    header: {
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      marginBottom: 20,
-    },
-    title: {
-      fontSize: 24,
-      fontWeight: 'bold',
-      color: '#000',
-    },
     subtitle: {
       fontSize: 16,
       color: '#000',
@@ -66,11 +67,6 @@ export function useStyles() {
       backgroundColor: 'rgba(0, 0, 0, 0.25)',
     },
 
-    rizzButtonText: {
-      color: 'rgba(255, 255, 255, 1)',
-      fontSize: fonts.size.typography_28,
-    },
-
     reply: {
       flexDirection: 'row',
       alignItems: 'center',
@@ -86,33 +82,7 @@ export function useStyles() {
       fontFamily: fonts.family.sfProBold,
       fontWeight: '400',
     },
-
-    box: {
-      width: 55,
-      height: 55,
-      borderRadius: 35,
-      backgroundColor: colors.primaryBlack,
-      alignItems: 'center',
-      justifyContent: 'center',
-      marginRight: 15,
-
-      position: 'absolute',
-      top: 9,
-      left: 3,
-      zIndex: 1,
-    },
-
-    rizzButton: {
-      backgroundColor: 'rgba(0, 0, 0, 1)',
-      padding: 13,
-      borderRadius: 50,
-      alignItems: 'center',
-      position: 'absolute',
-      top: 8,
-      right: 3,
-      width: 290,
-      zIndex: 1,
-    },
+    image: {fontSize: 30},
   });
 
   return {

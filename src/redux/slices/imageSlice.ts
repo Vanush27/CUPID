@@ -1,11 +1,13 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
 
 type IInitialState = {
+  isOpen: boolean;
   images: string[] | [];
 };
 
 export const initialState: IInitialState = {
   images: [],
+  isOpen: false,
 };
 
 const imagesSlice = createSlice({
@@ -19,9 +21,13 @@ const imagesSlice = createSlice({
     deleteImage: (state, {payload}: PayloadAction<number>) => {
       state.images.splice(payload, 1);
     },
+
+    setIsOpen: (state, {payload}: PayloadAction<boolean>) => {
+      state.isOpen = payload;
+    },
   },
 });
 
-export const {addImages, deleteImage} = imagesSlice.actions;
+export const {addImages, deleteImage, setIsOpen} = imagesSlice.actions;
 
 export default imagesSlice.reducer;

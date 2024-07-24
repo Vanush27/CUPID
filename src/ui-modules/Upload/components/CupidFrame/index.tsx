@@ -3,13 +3,20 @@ import {View, Text, TouchableOpacity, Image} from 'react-native';
 
 import Icon from 'react-native-vector-icons/Ionicons';
 import BrainIcon from 'react-native-vector-icons/MaterialCommunityIcons';
-import CrownIcon from 'react-native-vector-icons/FontAwesome5';
+// import CrownIcon from 'react-native-vector-icons/FontAwesome5';
 import Heart from 'react-native-vector-icons/AntDesign';
 
+import {ImagesAssets} from '@assets/images/ImagesAssets';
 import {launchImageLibrary} from 'react-native-image-picker';
 import {useAppImages} from '@redux/hooks/useAppImages';
 
 import {useStyles} from './styles';
+import {DIMENSIONS_HEIGHT} from '@constants';
+
+export type TOnScrollHandler = {
+  isScrolling: boolean;
+  prevY: number;
+};
 
 const CupidFrame = () => {
   const {styles} = useStyles();
@@ -51,28 +58,21 @@ const CupidFrame = () => {
       </View>
 
       <View>
-        <View style={styles.box}>
-          <Heart name="heart" size={30} color={'red'} />
-        </View>
-
-        <TouchableOpacity style={styles.rizzButton}>
-          <Text style={styles.rizzButtonText}>Get Rizz Reply</Text>
-        </TouchableOpacity>
-
         <View style={styles.reply}>
-          <Icon name="heart" size={20} color="#000" />
+          <Image source={ImagesAssets.love} />
+
           <Text style={styles.replyText}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </Text>
         </View>
         <View style={styles.reply}>
-          <CrownIcon name="crown" size={20} color="#000" />
+          <Text style={styles.image}>👑</Text>
           <Text style={styles.replyText}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </Text>
         </View>
         <View style={styles.reply}>
-          <BrainIcon name="brain" size={20} color="#000" />
+          <Text style={styles.image}>🧠</Text>
           <Text style={styles.replyText}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </Text>

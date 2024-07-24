@@ -6,13 +6,11 @@ import {ClockArrow, Menu} from '@assets/icons';
 
 import {useStyles} from './styles';
 
-const HomeMenu = () => {
+import {MyBottomSheet} from '@ui-modules';
+
+const HomeMenu = ({handlePresentModalPress, bottomSheetModalRef}: any) => {
   const navigation = useNavigation<any>();
   const {styles} = useStyles();
-
-  const openDrawer = () => {
-    navigation.openDrawer();
-  };
 
   const handleHistory = () => {
     navigation.navigate('History');
@@ -21,11 +19,13 @@ const HomeMenu = () => {
   return (
     <View style={styles.container}>
       <View style={styles.menu}>
-        <TouchableOpacity onPress={openDrawer}>
+        <TouchableOpacity onPress={handlePresentModalPress}>
           <Menu height={20} width={38} />
         </TouchableOpacity>
 
-        <View>
+        <MyBottomSheet bottomSheetModalRef={bottomSheetModalRef} />
+
+        <View style={styles.boxTitile}>
           <Text style={styles.text}>CUPID</Text>
           <Text style={styles.subText}>Regular</Text>
         </View>
